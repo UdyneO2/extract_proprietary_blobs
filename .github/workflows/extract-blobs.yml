@@ -30,17 +30,17 @@ on:
       USER_NAME:
         description: 'Name in Github Account'
         required: true
-        default: 'Carlo Dee'
+        default: 'mnrdnn'
       USER_EMAIL:
         description: 'E-mail in Github Account'
         required: true
-        default: 'carlodee.official@proton.me'
+        default: 'mnrdnn.official@proton.me'
 
 jobs:
   build:
     name: Extract Blobs by ${{ github.actor }}
     if: github.event.repository.owner.id == github.event.sender.id
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     env:
       GITHUB_TOKEN: ${{ secrets.PAT }}
       FDR: ${{ github.event.inputs.FIRMWARE_DUMP_REPO }}
