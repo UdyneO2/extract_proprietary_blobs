@@ -26,7 +26,7 @@ on:
       DEVICE_VENDORNAME:
         description: 'Device Vendor Name'
         required: true
-        default: ''
+        default: 'realme'
       USER_NAME:
         description: 'Name in Github Account'
         required: true
